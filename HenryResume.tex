@@ -1,0 +1,208 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.82]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Henry}{Geerlings}
+\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{2423A Columbia Blvd}{Richmond, CA 94804}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[fixed]{+1~(805)~754~6622}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{henrygeerlings@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{HGeerlings.github.io}
+
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{A motivated engineering student with an emphasis in material mechanics and computational modeling. Experience in molecular dynamics, finite element method, and numerical analysis.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{-\ Education\ -}
+\cventry{2011 - Dec. 2015}{B.S. Materials Science \& Engineering}{University of California}{Berkeley}{\textit{GPA - 3.2}}{}  % arguments 3 to 6 can be left empty
+
+\section{-\ Experience\ -}
+\cventry{Aug. 2015 - Current}{Affiliate}{Lawrence Berkeley National Laboratory}{Berkeley}{}{Participating in a collaboration between the Materials Project and UC Berkeley for implementing defect-dislocation interaction energies into the Materials Project database.\newline{}%
+\textit{Detailed achievements}:%
+\begin{itemize}%	
+\item Using existing elastic constants data from the database to feed into continuum model for interactions.
+\item Generating (interstitial) defect structures of varying supercell size and chemical species for DFT calculations using the "Python Materials Genomics" package. 
+\end{itemize}}
+\cventry{June 2015 - Aug. 2015}{Intern}{Lawrence Berkeley National Laboratory}{Berkeley}{}{Coded and analyzed multiple searching algorithms for large scale materials optimization. Coupled with the Materials Project, this would allow on-the-fly materials screening using the Materials API for the computationally budget conscious.\newline{}%
+\textit{Detailed achievements}:%
+\begin{itemize}%	
+\item Search methodologies included genetic algorithms and as well as more black box global optimization engines. 
+\item Applications included  water splitting materials (band gap/edge) and ductile intermetallics (bulk/shear modulus).
+\end{itemize}}
+\cventry{Jan. 2014 - Jan. 2015}{Undergraduate Researcher}{Chrzan Computational Materials Group}{Berkeley}{}{Performed molecular dynamics simulations of dislocations near the phase transformation temperature of pure titanium in order to characterize cold working effects.\newline{}%
+\textit{Detailed achievements}:%
+\begin{itemize}%
+\item Verified thermal expansion behavior of empirical potential model by comparing to experimental results.
+\item Visually mapped out multiple phases near the transition temperature using bond order parameters. 
+\end{itemize}}
+  %\begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    %\begin{itemize}
+   % \item Sub-sub-achievement i;
+    %\item Sub-sub-achievement ii;
+    %\item Sub-sub-achievement iii;
+   % \end{itemize}
+  %\item Sub-achievement (c);
+  %\end{itemize}
+%\item Achievement 3.
+\cventry{Jan. 2013 - June 2013}{EOPS Tutor }{Diablo Valley College}{Pleasant Hill}{}{Provided one on one tutoring for DVC's \textit{Extended Opportunity Programs and Services} branch, a program designed to promote academic success for low income, educationally disadvantaged students. Tutored college level Physics, Calculus, General Chemistry, and Trigonometry. \newline{}%
+\textit{Detailed achievements}:%
+\begin{itemize}%
+\item Saw overall increases in students'  academic performance and subject enthusiasm.
+\end{itemize}}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\newpage
+
+\section{-\ Publications\ -}
+De Jong, M., Chen, W., Geerlings, H., Asta, M., and Persson, K. (2015). A database to enable discovery and design of piezoelectric materials. \textit{Scientific Data} \textbf{2}, 1500053
+
+\section{-\ Computing\ -}
+\cvdoubleitem{OS}{Windows, OS X, Ubuntu (Linux)}{Technical}{FEnICS, Comsol, Lammps, VMD, ParaView}
+\cvdoubleitem{Utility}{Git, Virtualenv, LaTeX, MS Office}{Languages}{Python, Bash, Matlab, Mathematica}
+
+\section{-\ Training\ -}
+\cvitem{Materials Analysis}
+\ \ \ \ \ {Scanning Electron Microscopy (SEM)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{Research}}
+
+\ \ \ \ {Energy Backscatter Diffraction (EBSD)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{Research}}
+
+\ \ \ \ {Focused Ion Beam (FIB)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{Research}}
+
+\ \ \ \ {X-Ray Diffraction (XRD)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{Lab Course}}
+
+\ \ \ \ {Metallography\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{Lab Course}}
+
+\ \ \ \ {Radiation Safety Training (EHS-470)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textit{LBNL}}
+
+
+
+\section{-\ Coursework\ -}
+
+\cvitem{Materials Science and Engineering}
+\ \ \ \ \ {Crystallography, Bonding, and Defects}
+
+\ \ \ \ {Phase Transformations and Kinetics}
+
+\ \ \ \ {Properties of Electronic Materials}
+
+\ \ \ \ {Mechanical Behavior of Materials}
+
+\ \ \ \ {Experimental Materials Science}
+
+\ \ \ \ {Materials Characterization}
+
+\ \ \ \ {Materials Production}
+
+\ \ \ \ {Polymeric Materials}
+
+\ \ \ \ {Corrosion}\\
+
+\cvitem{Mechanical Engineering}
+\ \ \ \ \ {Simulation of Advanced Manufacturing Processes}
+
+\ \ \ \ {Engineering Analysis using FEM}
+
+\ \ \ \ {Continuum Mechanics}
+
+\ \ \ \ {Engineering Dynamics}
+
+\ \ \ \ {Solid Mechanics}
+
+\ \ \ \ {Heat Transfer}\\
+
+\cvitem{Engineering}
+\ \ \ \ \ {Computer Programming with MATLAB}
+
+\ \ \ \ {Methods of Engineering Analysis}
+
+\ \ \ \ {Engineering Thermodynamics}\\
+
+
+\section{-\ Extracurricular\ -}
+\cvdoubleitem{Societies}{ACerS, AIST, ASM, TMS}{Hobby}{Woodturning, backgammon}
+
+
+
+
+
+%\section{References}
+%\begin{cvcolumns}
+  %\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  %\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  %\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
